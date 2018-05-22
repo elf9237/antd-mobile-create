@@ -1,8 +1,30 @@
 {
-  "presets": ["babel-preset-expo"],
+  "presets": ["react-native"],
+  "plugins": [["import", { "libraryName": "antd-mobile" }]],
   "env": {
     "development": {
       "plugins": ["transform-react-jsx-source"]
-    }
+    },
+    "EXPO_DEBUG":true
   }
 }
+
+
+// {
+//   "presets": ["babel-preset-expo"],
+//   "plugins": [["import", { "libraryName": "antd-mobile" }]],
+//   "env": {
+//     "development": {
+//       "plugins": ["transform-react-jsx-source"],
+//       "module-resolver": {
+//         "root": ["./src"],
+//         "alias": {
+//           "test": "./test",
+//           "underscore": "lodash"
+//         }
+//       }
+//     }
+//   }
+// }
+
+
